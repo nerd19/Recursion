@@ -34,27 +34,28 @@ public class Recursion {
             b[index - 1] = a[index];
         }
         return isMember(b, value);
-    }
+    }/*
     private static void reverse(String s) {
         if (s == null) {
             return;
         }
-        if (s.length() == 0) {
-            System.out.println();
-            return;
-        }
         System.out.print()
-        return reverse(s.)
             for (int index = s.length() - 1; index >= 0; index--) {
                 System.out.println(s.charAt(index));
             }
+    }*/
+    private static int sum(int number) {
+        if (number < 0) {
+            return 0;
         }
+        return number + sum(number - 1);
     }
     public static void main(String[] args) {
         System.out.println(recursiveMultiplication(3,8));
         int a[] = {1,4,5,6,7,8,9,6};
         System.out.println(isMember(a,0));
-        reverse("Hello");
+        //reverse("Hello");
+        System.out.println(sum(3));
     }
 
 }
